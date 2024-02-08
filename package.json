@@ -1,5 +1,5 @@
 {
-  "name": "@solidjs/actions",
+  "name": "@solidjs/safe-action",
   "version": "1.0.0",
   "description": "This package is designed to handle mutations in your solid-start app efficiently. It ensures type safety, input validation, and handles server errors and success states, providing a reliable and safe way to execute Solidjs Server Actions.",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "solid",
+    "solidjs",
     "solid-start",
     "server actions",
     "type safe",
