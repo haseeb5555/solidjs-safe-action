@@ -1,0 +1,31 @@
+{
+  "name": "@solidjs/actions",
+  "version": "1.0.0",
+  "description": "This package is designed to handle mutations in your solid-start app efficiently. It ensures type safety, input validation, and handles server errors and success states, providing a reliable and safe way to execute Solidjs Server Actions.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "solid",
+    "solid-start",
+    "server actions",
+    "type safe",
+    "safe action"
+  ],
+  "author": "Muhammad Haseeb",
+  "license": "MIT",
+  "dependencies": {
+    "solid-js": "^1.8.14",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haseeb5555/solidjs-actions"
+  }
+}
