@@ -1,4 +1,4 @@
- # @solidjs/safe-action
+ # solid-safe-action
 
  This package is designed to handle mutations in your solid-start app efficiently. It ensures type safety, input validation, and handles server errors and success states, providing a reliable and safe way to execute Solidjs Server Actions.
 
@@ -7,21 +7,21 @@
 You can install this package via npm or yarn:
 
 ```bash
-npm install @solidjs/safe-action
+npm install solid-safe-action
 # or
-yarn add  @solidjs/safe-action
+yarn add  solid-safe-action
 
 ```
 
 ## Usage Example 
-Here is an example of how to use @solidjs/safe-action in a SolidJS application:
+Here is an example of how to use solid-safe-action in a SolidJS application:
 ### src/actions/index.ts
 First, create a safe action:
 
 ```ts filename="index.ts" copy 
 
 'use server'
-import { createSafeAction } from "@solidjs/safe-action";
+import { createSafeAction } from "solid-safe-action";
 import { simulateDatabaseCall } from "~/lib/mock"; // mock db call
 import { CreateForm } from "~/lib/schema"; // zod schema for validation 
 import { InputType, ReturnType } from "~/lib/types"; // type infer from zod schema and type of your action state 
@@ -78,7 +78,8 @@ export type ReturnType = ActionState<InputType, { title: string; }>;
 Finally, use the useSafeAction hook to execute the action:
 
 ```tsx filename="index.tsx" copy
-import { useSafeAction } from "@solidjs/safe-action";
+'use client'
+import { useSafeAction } from "solid-safe-action";
 import { createForm } from "~/actions/index;
 
 const ExampleButton = () => {
